@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pampodoro</title>
+    <link rel="stylesheet" type="text/css" href="pomodoro_Css.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>
+<body class="container">
+    
+    <div class="card" id="card" style="width: 18rem;">
+        <h1>
+            <div id="timer">
+                <div id="time">
+                    <span id="minute">24</span>
+                    <span>:</span>
+                    <span id="second">00</span>
+                </div>
+            </div>
+        </h1>    
+        <div class="card-body">
+          <h5 class="card-title"><button class="btn btn-secondary btn-lg disabled" onclick="minus()">-</button>
+            <button class="btn btn-secondary btn-lg disabled" onclick="plus()">+</button></h5>
+          <p class="card-text"><button id="start" class="btn btn-success" onclick="startTime()">start</button>
+            <button class="btn btn-warning" onclick="pause()">pause</button>
+            <button class="btn btn-danger" onclick="repeat()">repeat</button></p>
+
+        </div>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="pomodoro_JS.js"></script>
+</body>
+</html>

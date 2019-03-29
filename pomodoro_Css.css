@@ -1,0 +1,15 @@
+.container{
+    margin: auto;
+    text-align: center;
+    padding: 40px;
+    background-color: aquamarine
+}
+
+
+#card {
+    border: 10px solid black;
+    background-color: rgb(4, 0, 255);
+    height: 250px;
+
+    margin-left: 30%;
+}
