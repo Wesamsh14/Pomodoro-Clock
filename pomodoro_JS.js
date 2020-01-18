@@ -4,7 +4,9 @@ let second=0,
 
 function plus(){
     minute++;
-    if (minute>60) minute=0;
+    if (minute>60){
+        minute=0;
+    }
 
 document.getElementById("minute").innerHTML = minute;}
 
@@ -15,12 +17,11 @@ function minus(){
 
 document.getElementById("minute").innerHTML = minute;}
 function startTime(){
-   
     timex= setInterval(timer, 1000);
+    if (timex){
+        document.getElementById("start").disabled = true;
+    }
 }
-    $("#start").click(function(){
-        
-      });
 
 function timer(){
     second--;
@@ -39,9 +40,10 @@ function timer(){
     document.getElementById("second").innerHTML = second;
 }
 function pause(){
-    
+
     clearInterval(timex);
-    //alert('the time is finish');
+    document.getElementById("start").disabled = false;
+
 }
 function repeat(){
     location.reload();
